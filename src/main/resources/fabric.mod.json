@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "modproject",
+	"version": "${version}",
+	"name": "Mod Project",
+	"description": "First mod project for Minecraft made by Hunter",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/modproject/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hunter.modproject.ModProject"
+		],
+		"client": [
+			"net.hunter.modproject.ModProjectClient"
+		],
+		"fabric-datagen": [
+			"net.hunter.modproject.ModProjectDataGenerator"
+		]
+	},
+	"mixins": [
+		"modproject.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
