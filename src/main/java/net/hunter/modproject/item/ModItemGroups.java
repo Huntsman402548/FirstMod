@@ -19,6 +19,7 @@ public class ModItemGroups {
                      entries.add(ModItems.SAPPHIRESWORD);
                      entries.add(ModBlocks.SAPPHIREBLOCK);
                      entries.add(ModBlocks.SAPPHIREORE);
+                     entries.add(ModBlocks.DEEPSLATESAPPHIREORE);
                     }).build());
 
     public static void registerItemGroups() {

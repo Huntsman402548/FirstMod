@@ -6,15 +6,17 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.hunter.modproject.ModProject;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new Item.Settings()));
-    public static final Item SAPPHIRESWORD = registerItem("sapphire_sword", new Item(new Item.Settings()
-            .maxCount(1)
-    ));
+    public static final Item SAPPHIRESWORD = registerItem("sapphire_sword", new SwordItem(
+            ModToolMaterials.SAPPHIRE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.SAPPHIRE, 4, -2.4F
+    ))));
 
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
         entries.add(SAPPHIRE);
