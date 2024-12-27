@@ -1,6 +1,5 @@
 package net.hunter.modproject.block;
 
-import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.hunter.modproject.ModProject;
 import net.minecraft.block.AbstractBlock;
