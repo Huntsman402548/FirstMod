@@ -20,10 +20,10 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 import java.util.List;
 
 public class ModConfiguredFeatures {
-    public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_BURIED = registerKey("sapphire_ore_buried");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_SMALL = registerKey("sapphire_ore_small");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_MEDIUM = registerKey("sapphire_ore_medium");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_LARGE = registerKey("sapphire_ore_large");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_BURIED_KEY = registerKey("sapphire_ore_buried");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_SMALL_KEY = registerKey("sapphire_ore_small");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_MEDIUM_KEY = registerKey("sapphire_ore_medium");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_LARGE_KEY = registerKey("sapphire_ore_large");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -34,10 +34,10 @@ public class ModConfiguredFeatures {
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATESAPPHIREORE.getDefaultState()));
 
 
-        register(context, SAPPHIRE_ORE_BURIED, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 12, 1.0f));
-        register(context, SAPPHIRE_ORE_SMALL, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 6, 0.1f));
-        register(context, SAPPHIRE_ORE_MEDIUM, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 10, 0.3f));
-        register(context, SAPPHIRE_ORE_LARGE, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 12, 0.5f));
+        register(context, SAPPHIRE_ORE_BURIED_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 12, 1.0f));
+        register(context, SAPPHIRE_ORE_SMALL_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 6, 0.1f));
+        register(context, SAPPHIRE_ORE_MEDIUM_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 10, 0.3f));
+        register(context, SAPPHIRE_ORE_LARGE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 12, 0.5f));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

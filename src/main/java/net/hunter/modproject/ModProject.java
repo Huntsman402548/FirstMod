@@ -20,6 +20,6 @@ public class ModProject implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		ModWorldGeneration.generateWorldGen();
+		ModWorldGeneration.generateModWorldGen();
 	}
 }

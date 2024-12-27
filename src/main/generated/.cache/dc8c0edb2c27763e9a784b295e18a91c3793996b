@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-26T20:47:50.195381211	Mod Project/Model Definitions
+// 1.21.1	2024-12-27T08:48:02.631706932	Mod Project/Model Definitions
 052e970426587023285f74bac24353c9313a7b78 assets/modproject/models/item/sapphire_helmet_netherite_trim.json
 367e4011cfcdb7d569a2e8feda0e54053c41077c assets/modproject/models/item/sapphire.json
 9d38a2d87c5bb07294e58e8fcdfaa11570094fc1 assets/modproject/models/item/sapphire_boots_iron_trim.json
@@ -11,8 +11,8 @@ d19d3c25ad64ee514200b50a0b1b4b8e411ae5c3 assets/modproject/models/item/sapphire_
 9d382d5657ab4e27355962c5a692d28612008e2e assets/modproject/models/item/sapphire_boots_amethyst_trim.json
 d29a12f6443841a9734b1844cba38782e8a00792 assets/modproject/models/block/sapphire_block.json
 39cb21c1efdb6fa9f2899a1cae0a7f34465105dc assets/modproject/models/item/sapphire_helmet_copper_trim.json
-b77a81e2bd63ed725eb0ca311923f3c377f3b377 assets/modproject/models/item/sapphire_leggings_lapis_trim.json
 033b1a9d6c50e94520af0fd116e7f68d2aa2198d assets/modproject/models/item/sapphire_chestplate_diamond_trim.json
+b77a81e2bd63ed725eb0ca311923f3c377f3b377 assets/modproject/models/item/sapphire_leggings_lapis_trim.json
 36f01024862481c778690e89fa1c79443296b32d assets/modproject/models/item/sapphire_chestplate_gold_trim.json
 17e90b92714f1225d0cf7ee459431f605fa8cec2 assets/modproject/models/item/sapphire_leggings_diamond_trim.json
 8d997097f6ee7e33dc66e69398239d8dcfd80377 assets/modproject/models/item/sapphire_chestplate_netherite_trim.json

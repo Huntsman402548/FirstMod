@@ -34,6 +34,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SAPPHIRELEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SAPPHIREBOOTS));
 
-                new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty());
+
     }
 }

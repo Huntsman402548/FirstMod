@@ -25,19 +25,19 @@ public class ModPlacedFeatures {
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
-        register(context, SAPPHIRE_ORE_BURIED_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_BURIED),
+        register(context, SAPPHIRE_ORE_BURIED_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_BURIED_KEY),
         ModOrePlacement.modifiersWithCount(14,
                 HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))
                 ));
-        register(context, SAPPHIRE_ORE_LARGE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_LARGE),
+        register(context, SAPPHIRE_ORE_LARGE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_LARGE_KEY),
                 ModOrePlacement.modifiersWithCount(14,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))
                 ));
-        register(context, SAPPHIRE_ORE_SMALL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_SMALL),
+        register(context, SAPPHIRE_ORE_SMALL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_SMALL_KEY),
                 ModOrePlacement.modifiersWithCount(14,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-64), YOffset.fixed(24))
                 ));
-        register(context, SAPPHIRE_ORE_MEDIUM_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_MEDIUM),
+        register(context, SAPPHIRE_ORE_MEDIUM_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_MEDIUM_KEY),
                 ModOrePlacement.modifiersWithCount(14,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-64), YOffset.fixed(10))
                 ));
