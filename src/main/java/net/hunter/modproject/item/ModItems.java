@@ -2,7 +2,6 @@ package net.hunter.modproject.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.hunter.modproject.ModProject;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;

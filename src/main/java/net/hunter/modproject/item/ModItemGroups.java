@@ -19,8 +19,8 @@ public class ModItemGroups {
                      entries.add(ModItems.SAPPHIRESWORD);
                      entries.add(ModItems.SAPPHIREHELMET);
                      entries.add(ModItems.SAPPHIREBOOTS);
-                        entries.add(ModItems.SAPPHIRECHESTPLATE);
-                        entries.add(ModItems.SAPPHIRELEGGINGS);
+                     entries.add(ModItems.SAPPHIRECHESTPLATE);
+                     entries.add(ModItems.SAPPHIRELEGGINGS);
                      entries.add(ModBlocks.SAPPHIREBLOCK);
                      entries.add(ModBlocks.SAPPHIREORE);
                      entries.add(ModBlocks.DEEPSLATESAPPHIREORE);
