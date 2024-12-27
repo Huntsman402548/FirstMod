@@ -34,10 +34,10 @@ public class ModConfiguredFeatures {
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATESAPPHIREORE.getDefaultState()));
 
 
-        register(context, SAPPHIRE_ORE_BURIED_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 12, 1.0f));
-        register(context, SAPPHIRE_ORE_SMALL_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 6, 0.1f));
-        register(context, SAPPHIRE_ORE_MEDIUM_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 10, 0.3f));
-        register(context, SAPPHIRE_ORE_LARGE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 12, 0.5f));
+        register(context, SAPPHIRE_ORE_BURIED_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 8, 1.0f));
+        register(context, SAPPHIRE_ORE_SMALL_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 2, 0.1f));
+        register(context, SAPPHIRE_ORE_MEDIUM_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 6, 0.3f));
+        register(context, SAPPHIRE_ORE_LARGE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 8, 0.5f));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

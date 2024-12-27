@@ -1,6 +1,11 @@
 {
   "item.modproject.sapphire": "Sapphire",
   "item.modproject.sapphire_sword": "Sapphire Sword",
+  "item.modproject.sapphire_axe": "Sapphire Axe",
+  "item.modproject.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.modproject.sapphire_shovel": "Sapphire Shovel",
+  "item.modproject.sapphire_hoe": "Sapphire Hoe",
+
   "item.modproject.sapphire_boots": "Sapphire Boots",
   "item.modproject.sapphire_leggings": "Sapphire Leggings",
   "item.modproject.sapphire_chestplate": "Sapphire Chestplate",

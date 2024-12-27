@@ -14,20 +14,15 @@ public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
     }
-
-    @Override
-    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIREORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIREBLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATESAPPHIREORE);
-
-        }
-
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.SAPPHIRE, Models.GENERATED);;
 
         itemModelGenerator.register(ModItems.SAPPHIRESWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SAPPHIREAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SAPPHIREPICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SAPPHIRESHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SAPPHIREHOE, Models.HANDHELD);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SAPPHIREHELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SAPPHIRECHESTPLATE));
@@ -36,4 +31,13 @@ public class ModModelProvider extends FabricModelProvider {
 
 
     }
+    @Override
+    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIREORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIREBLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATESAPPHIREORE);
+
+        }
+
+
 }

@@ -24,7 +24,10 @@ public class ModItemGroups {
                      entries.add(ModBlocks.SAPPHIREBLOCK);
                      entries.add(ModBlocks.SAPPHIREORE);
                      entries.add(ModBlocks.DEEPSLATESAPPHIREORE);
-
+                     entries.add(ModItems.SAPPHIREAXE);
+                     entries.add(ModItems.SAPPHIREHOE);
+                     entries.add(ModItems.SAPPHIRESHOVEL);
+                     entries.add(ModItems.SAPPHIREPICKAXE);
                     }).build());
 
     public static void registerItemGroups() {

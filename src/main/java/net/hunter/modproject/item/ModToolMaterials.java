@@ -12,7 +12,7 @@ import net.minecraft.registry.tag.TagKey;
  * Provides the default {@link ToolMaterial}s used by vanilla tools.
  */
 public enum ModToolMaterials implements ToolMaterial {
-    SAPPHIRE(BlockTags.INCORRECT_FOR_IRON_TOOL, 1000, 9.0F, 2.0F, 14, () -> Ingredient.ofItems(ModItems.SAPPHIRE)
+    SAPPHIRE(BlockTags.INCORRECT_FOR_IRON_TOOL, 1000, 7.0F, 2.0F, 14, () -> Ingredient.ofItems(ModItems.SAPPHIRE)
     );
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
