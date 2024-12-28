@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.hunter.modproject.block.ModBlocks;
 import net.hunter.modproject.item.ModItemGroups;
 import net.hunter.modproject.item.ModItems;
+import net.hunter.modproject.item.custom.ModArmorItem;
 import net.hunter.modproject.world.ModOrePlacement;
 import net.hunter.modproject.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
