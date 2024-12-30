@@ -2,13 +2,10 @@ package net.hunter.modproject.world;
 
 import net.hunter.modproject.block.ModBlocks;
 import net.hunter.modproject.ModProject;
-import net.hunter.modproject.block.ModBlocks;
-import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
@@ -30,8 +27,8 @@ public class ModConfiguredFeatures {
         RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
         List<OreFeatureConfig.Target> overworldSapphireOres =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.SAPPHIREORE.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATESAPPHIREORE.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.SAPPHIRE_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_SAPPHIRE_ORE.getDefaultState()));
 
 
         register(context, SAPPHIRE_ORE_BURIED_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 8, 1.0f));

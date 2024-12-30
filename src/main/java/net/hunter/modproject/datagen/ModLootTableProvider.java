@@ -5,21 +5,15 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.hunter.modproject.block.ModBlocks;
 import net.hunter.modproject.item.ModItems;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
-import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
-import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -35,9 +29,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
 
         addDrop(ModBlocks.SAPPHIREBLOCK);
+        addDrop(ModBlocks.REDWOOD_LOG);
 
-        addDrop(ModBlocks.SAPPHIREORE, oreDrops(ModBlocks.SAPPHIREORE, ModItems.SAPPHIRE));
-        addDrop(ModBlocks.DEEPSLATESAPPHIREORE, oreDrops(ModBlocks.DEEPSLATESAPPHIREORE, ModItems.SAPPHIRE));
+        addDrop(ModBlocks.SAPPHIRE_ORE, oreDrops(ModBlocks.SAPPHIRE_ORE, ModItems.SAPPHIRE));
+        addDrop(ModBlocks.DEEPSLATE_SAPPHIRE_ORE, oreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE, ModItems.SAPPHIRE));
 
     }
 

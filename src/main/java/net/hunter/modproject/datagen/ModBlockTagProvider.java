@@ -30,13 +30,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.SAPPHIREBLOCK)
-                .add(ModBlocks.SAPPHIREORE)
-                .add(ModBlocks.DEEPSLATESAPPHIREORE);
+                .add(ModBlocks.SAPPHIRE_ORE)
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.SAPPHIREORE)
+                .add(ModBlocks.SAPPHIRE_ORE)
                 .add(ModBlocks.SAPPHIREBLOCK)
-                .add(ModBlocks.DEEPSLATESAPPHIREORE);
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
     }
 
     public static class ModLootTableProvider extends FabricBlockLootTableProvider {
@@ -50,8 +50,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
             addDrop(ModBlocks.SAPPHIREBLOCK);
 
-            addDrop(ModBlocks.SAPPHIREORE, oreDrops(ModBlocks.SAPPHIREORE, ModItems.SAPPHIRE));
-            addDrop(ModBlocks.DEEPSLATESAPPHIREORE, oreDrops(ModBlocks.DEEPSLATESAPPHIREORE, ModItems.SAPPHIRE));
+            addDrop(ModBlocks.SAPPHIRE_ORE, oreDrops(ModBlocks.SAPPHIRE_ORE, ModItems.SAPPHIRE));
+            addDrop(ModBlocks.DEEPSLATE_SAPPHIRE_ORE, oreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE, ModItems.SAPPHIRE));
 
         }
 

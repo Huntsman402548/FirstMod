@@ -3,6 +3,8 @@ package net.hunter.modproject;
 import net.fabricmc.api.ModInitializer;
 
 import net.hunter.modproject.block.ModBlocks;
+import net.hunter.modproject.enchantment.ModEnchantmentEffects;
+import net.hunter.modproject.enchantment.ModEnchantments;
 import net.hunter.modproject.item.ModItemGroups;
 import net.hunter.modproject.item.ModItems;
 import net.hunter.modproject.item.custom.ModArmorItem;
@@ -22,5 +24,6 @@ public class ModProject implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModWorldGeneration.generateModWorldGen();
+		ModEnchantmentEffects.registerEnchantmentEffects();
 	}
 }

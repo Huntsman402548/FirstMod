@@ -3,6 +3,8 @@ package net.hunter.modproject;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.hunter.modproject.datagen.*;
+import net.hunter.modproject.enchantment.ModEnchantmentEffects;
+import net.hunter.modproject.enchantment.ModEnchantments;
 import net.hunter.modproject.world.ModConfiguredFeatures;
 import net.hunter.modproject.world.ModPlacedFeatures;
 import net.minecraft.registry.RegistryBuilder;
@@ -24,7 +26,8 @@ public class ModProjectDataGenerator implements DataGeneratorEntrypoint {
 
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
-		}
+	}
 }

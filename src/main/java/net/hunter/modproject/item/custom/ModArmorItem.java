@@ -21,9 +21,11 @@ public class ModArmorItem extends ArmorItem {
                     .put(ModArmorMaterials.SAPPHIRE,
                         List.of(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 400,1,false,false))).build();
 
+
     public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
         super(material, type, settings);
     }
+
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {

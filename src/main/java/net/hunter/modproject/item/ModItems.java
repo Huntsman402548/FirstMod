@@ -39,12 +39,26 @@ public class ModItems {
             ModArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(30)
     )));
 
-
-
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(ModProject.MOD_ID, name), item);
     }
     public static void registerModItems() {
         ModProject.LOGGER.info("Registering Mod items for " + ModProject.MOD_ID);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(SAPPHIRE);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+            entries.add(SAPPHIREAXE);
+            entries.add(SAPPHIREPICKAXE);
+            entries.add(SAPPHIRESHOVEL);
+            entries.add(SAPPHIREHOE);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.add(SAPPHIREBOOTS);
+            entries.add(SAPPHIRELEGGINGS);
+            entries.add(SAPPHIRECHESTPLATE);
+            entries.add(SAPPHIREHELMET);
+            entries.add(SAPPHIRESWORD);
+        });
     }
 }

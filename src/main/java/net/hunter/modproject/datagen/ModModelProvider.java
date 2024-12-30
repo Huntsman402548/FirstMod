@@ -6,9 +6,8 @@ import net.hunter.modproject.block.ModBlocks;
 import net.hunter.modproject.item.ModItems;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.util.Identifier;
 
-import java.util.Optional;
+import java.util.Properties;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -33,9 +32,12 @@ public class ModModelProvider extends FabricModelProvider {
     }
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIREORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIREBLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATESAPPHIREORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+        blockStateModelGenerator.registerLog(ModBlocks.REDWOOD_LOG).log(ModBlocks.REDWOOD_LOG);
+        blockStateModelGenerator.registerSingleton(ModBlocks.REDWOOD_LEAVES, TexturedModel.LEAVES);
+
 
         }
 

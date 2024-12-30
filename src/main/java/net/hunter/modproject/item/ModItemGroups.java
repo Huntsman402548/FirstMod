@@ -22,8 +22,8 @@ public class ModItemGroups {
                      entries.add(ModItems.SAPPHIRECHESTPLATE);
                      entries.add(ModItems.SAPPHIRELEGGINGS);
                      entries.add(ModBlocks.SAPPHIREBLOCK);
-                     entries.add(ModBlocks.SAPPHIREORE);
-                     entries.add(ModBlocks.DEEPSLATESAPPHIREORE);
+                     entries.add(ModBlocks.SAPPHIRE_ORE);
+                     entries.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
                      entries.add(ModItems.SAPPHIREAXE);
                      entries.add(ModItems.SAPPHIREHOE);
                      entries.add(ModItems.SAPPHIRESHOVEL);
